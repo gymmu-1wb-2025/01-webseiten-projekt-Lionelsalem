@@ -22,7 +22,7 @@ function getHtmlInputs() {
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [],
-base: "/01-webseiten-projekt-Lionelsalem"
+  base: "/01-webseiten-projekt-Lionelsalem/",
   build: {
     outDir: "dist",
     rollupOptions: {
