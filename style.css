@@ -25,5 +25,9 @@ section > p {
 .icon {
   width: 24px;
   height: 24px;
-  fill: currentColor;
+}
+nav > ul > li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
 }
