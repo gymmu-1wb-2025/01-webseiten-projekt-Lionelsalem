@@ -31,3 +31,9 @@ nav > ul > li {
   list-style: none;
   color: black;
 }
+
+.text-box {
+  background-color: lightblue;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
