@@ -7,35 +7,184 @@
     <title>Eigene Webseite</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <h1>Webseite von ...</h1>
+  <body class="grid-wrapper">
+    <header style="grid-area: header;">
+      <h1>Die Karriere von Lionel Messi</h1><!--Titel der Website-->
+      <button onclick="createNewElement()">click me</button><!--Zählerelement-->
     </header>
+    <nav style="grid-area: aside;">
+      <ul class="Michel">
+        <li>
+          <a href="#Abschnitt1"> <!-- 1. Abschnitt. Wenn man Draudrückt wird man zum Abschnitt geleitet. Dies ist auch bei folgenden Abschnitten so-->
+            <svg viewBox="0 0 24 24" class="icon">
+              <rect x="5" y="5" width="14" height="14"/>
+            </svg>
+            Der Anfang seiner Karriere</a
+          >
+        </li>
+        <li>
+          <a href="#Abschnitt2">
+            <svg viewBox="0 0 24 24" class="icon">
+              <rect x="5" y="5" width="14" height="14"/><!--CSS Quadrat-->
+            </svg>
+            Der Wechsel nach Barcelona</a
+          >
+        </li>
+        <li>
+          <a href="#Abschnitt3">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M4 11 L12 5 L20 11 Z"/>
+              <rect x="6" y="11" width="12" height="8"/>
+            </svg>
+            Das Profidebut</a
+          >
+        </li>
+        <li>
+          <a href="#Abschnitt4">
+            <svg viewBox="0 0 24 24" class="icon">
+              <path d="M4 11 L12 5 L20 11 Z"/>
+              <rect x="6" y="11" width="12" height="8"/><!-- CSS Haus-->
+            </svg>
+            Das magische Jahr</a
+          >
+        </li>
+        <li>
+          <a href="#Abschnitt5">
+            <svg viewBox="0 0 24 24" class="icon">
+              <circle cx="12" cy="12" r="5"></circle>/><!-- CSS Kreis-->
+            </svg>
+            Messis grösster Erfolg</a
+          >
+        </li>
+        <li>
+          <a href="#Abschnitt6"
+            ><svg viewBox="0 0 24 24" class="icon">
+              <circle cx="12" cy="12" r="5"></circle>
+            </svg>
+            Psg und dann Miami</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-    <main>
-      <section>
-        <h2>Dies ist ein erster Abschnitt</h2>
-        Abschnitte haben immer einen Titel und dann den Text.
-      </section>
+    <main style="grid-area: main;">
+      <h2 style="text-decoration: underline;"></h2>
 
-      <section>
-        <h2>Das p-Tag</h2>
-        <p>Der Text sollte immer in ein p gepackt werden.</p>
-        <p>Mit dem p ist es auch möglich einen Zeilenumbruch zu haben.</p>
-      </section>
+      <section><!-- Immer Abschnitt mit Text Box, Farbe und Bild-->
+        <h2 id="Abschnitt1">Der Anfang seiner Karriere</h2>
+        <p class="text-box">
+          Lionel Messi gehört zu den erfolgreichsten Fußballspielern aller
+          Zeiten. Seine Karriere begann in Rosario, Argentinien, wo er schon als
+          kleines Kind mit dem Fußballspielen anfing. Er spielte zuerst in
+          kleinen lokalen Vereinen wie Grandoli und später bei Newell’s Old
+          Boys. Schon früh erkannte man sein außergewöhnliches Talent,
+          allerdings hatte er durch eine
+          <a href="./Unterseiten/hobbies.html"
+            >Wachstumsstörung
+          </a>gesundheitliche Probleme, die teuer behandelt werden mussten.
+        </p>
 
-      <section>
-        <h2>Unterseiten verlinken</h2>
-        <p>
-          Wir können auch weitere Webseiten verknüpfen, dafür müssen wir nur
-          einen Link angeben, wie zum Beispiel zu den
-          <a href="./unterseiten/hobbies.html">Hobbies</a>.
+        <img
+          src="https://www.si.com/.image/t_share/MTY4MTAyNTc3MjA4NzYzNjY1/1992-94-lionel-messi-childhoodjpg.jpg"
+          alt="Messi Kind"
+          width="350"
+        >
+
+        <h2 id="Abschnitt2">Der Wechsel nach Barcelona</h2>
+        <p class="text-box">
+          Mit 13 Jahren zog Messi nach Spanien, weil der FC Barcelona ihm anbot,
+          in der berühmten Jugendakademie La Masia zu spielen und gleichzeitig
+          seine medizinische Behandlung zu übernehmen. Dort entwickelte er sich
+          schnell zu einem der besten Jugendspieler des Vereins. Seine Technik,
+          seine Dribblings und sein Spielverständnis machten ihn schon in jungen
+          Jahren zu einem außergewöhnlichen Talent.
+        </p>
+
+        <img
+          src="https://i.pinimg.com/originals/bc/b1/b2/bcb1b2c1eaba6ae11a3d80e167a8ab7c.jpg"
+          alt="Messi Barca Jugend"
+          width="350"
+        >
+        <h2 id="Abschnitt3">Das Profidebut</h2>
+        <p class="text-box">
+          Mit 17 Jahren gab Messi im Jahr 2004 sein Debüt für die erste
+          Mannschaft des FC Barcelona. Danach ging seine Entwicklung rasant
+          weiter. Unter Trainer Pep Guardiola erreichte er zwischen 2008 und
+          2012 seinen ersten großen Karrierehöhepunkt. In dieser Zeit gewann
+          Barcelona mehrfach die spanische Liga, den spanischen Pokal und
+          mehrmals die Champions League. Messi spielte in einem Team, das zu den
+          besten der Fußballgeschichte zählt, zusammen mit Spielern wie Xavi und
+          Iniesta. Er erhielt in diesen Jahren mehrere Auszeichnungen als bester
+          Spieler der Welt.
+        </p>
+        <img
+          src="https://www.skysportaustria.at/wp-content/uploads/2021/11/imago0001555766h-scaled-e1636970056294.jpg"
+          alt="Messi Profidebut"
+        >
+
+        <h2 id="Abschnitt4">Das magische Jahr</h2>
+        <p class="text-box">
+          Während seiner Zeit bei Barcelona stellte Messi viele Rekorde auf. Er
+          wurde zum besten Torschützen in der Geschichte des Vereins und
+          erzielte im Jahr 2012 insgesamt 91 Tore, mehr als jeder Spieler zuvor
+          in einem Kalenderjahr. Außerdem gewann er mit dem Verein über 30
+          Titel, darunter vier Champions-League-Trophäen.
+        </p>
+        <img
+          src="https://wallpaperaccess.com/full/9497268.jpg"
+          alt="messi 2012"
+          width="350"
+        >
+
+        <h2 id="Abschnitt5">Messis grösster Erfolg</h2>
+        <p class="text-box">
+          In der argentinischen Nationalmannschaft erlebte Messi Höhen und
+          Tiefen. Er erreichte mehrere große Finals, verlor aber auch einige
+          davon, was in Argentinien zu Kritik führte. Trotzdem gab er nicht auf.
+          2021 gewann er mit Argentinien die Copa América, seinen ersten großen
+          Titel mit dem Nationalteam. Der größte Erfolg seiner
+          Nationalmannschaftskarriere gelang ihm 2022: Messi führte Argentinien
+          bei der Weltmeisterschaft in Katar zum Titel und wurde zum wichtigsten
+          Spieler des Turniers.
+        </p>
+        <img
+          src="https://cdn2.telediario.mx/uploads/media/2022/12/18/lionel-messi-besa-copa-recibir.jpg"
+          alt="Messi WM"
+          width="350"
+          height="220"
+        >
+
+        <h2 id="Abschnitt6">Psg und dann Miami</h2>
+        <p class="text-box">
+          2021 musste Messi Barcelona verlassen, da der Verein große finanzielle
+          Probleme hatte und seinen Vertrag nicht verlängern konnte. Er
+          wechselte zu Paris Saint-Germain (PSG), wo er weitere Titel gewann und
+          mit anderen Weltstars zusammenspielte. 2023 wechselte Messi dann in
+          die Major League Soccer zu Inter Miami. Sein Wechsel brachte dem
+          Fußball in den USA viel Aufmerksamkeit, und Messi wurde schnell zum
+          wichtigsten Spieler der Liga.
+          <a href="https://www.intermiamicf.com/players/lionel-messi/"
+            >Messi Intermiami</a
+          >
+        </p>
+        <img
+          src="https://tmssl.akamaized.net/images/foto/big/messi-miami-psg-spotlight-1750940464-171098.png?lm=1750940496"
+          alt="Psg und Miami"
+          width="350"
+        >
+
+        <p class="text-box">
+          Messis Karriere zeigt, wie weit man mit Talent, harter Arbeit und
+          Durchhaltevermögen kommen kann. Er hat im Vereinsfußball und in der
+          Nationalmannschaft Geschichte geschrieben und gilt für viele Fans als
+          einer der besten Spieler aller Zeiten.
         </p>
       </section>
     </main>
 
-    <footer>Meine Webseite</footer>
+    <footer>Lionel Webseite</footer>
   </body>
 </html>
