@@ -1,12 +1,11 @@
 let counter = 0;
-
 function createNewElement() {
-  let newelement = document.createElement("P");
+  let newElement = document.querySelector("h1");
 
   counter = counter + 1;
 
-  newelement.textContent = "Element " + counter;
+  newElement.textContent = counter;
 
-  let mainElement = document;
-  mainElement.appendChild(newElement);
-}
+  let titleElement = document.querySelector("header");
+  mainElement.textContent = count;
+} /*Counter, der durch draufklicken immer Plus 1 macht */

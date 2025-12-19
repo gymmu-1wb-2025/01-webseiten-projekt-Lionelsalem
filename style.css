@@ -2,20 +2,10 @@ img {
   max-width: 100%;
 }
 
-.grid-wrapper {
-  display: grid;
-  height: 82vh;
-  grid-template-columns: 25% 1fr;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
-}
 header {
   text-align: center;
   background-color: #ffffaa;
-}
+} /*Titel in der Mitte mit Farbe*/
 
 section > p {
   border: 1px dotted black;
@@ -25,18 +15,23 @@ section > p {
 .icon {
   width: 24px;
   height: 24px;
-}
+} /*Grösse und Breite für die Icons*/
 nav > ul > li {
   text-decoration: none;
   list-style: none;
   color: black;
 }
 
+nav > ul > li > a {
+  display: flex;
+  align-items: center;
+}
+
 .text-box {
   background-color: lightblue;
   padding: 15px;
   border: 1px solid #ccc;
-}
+} /*Text-box Design*/
 
 .grid-wrapper {
   display: grid;
@@ -48,3 +43,28 @@ nav > ul > li {
     "aside main"
     "footer footer";
 }
+
+body {
+}
+
+main {
+  grid-area: main;
+  overflow-y: scroll;
+} /*Wenn man nach unten scrollt bleibt der Rand oben*/
+
+nav {
+  grid-area: nav;
+  background-color: rgb(208, 248, 255);
+}
+
+footer {
+  grid-area: footer;
+}
+
+.Michel {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  gap: 2.5em;
+} /*Design und Abstand am Rand*/
